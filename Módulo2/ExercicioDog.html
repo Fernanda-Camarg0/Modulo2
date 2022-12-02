@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog</title>
+</head>
+<body>
+    <h2>Meu Pet</h2>
+    <p id="demo"></p>
+    <script>
+        class Dog {
+            constructor(nome, year, race){
+                this.nome = nome;
+                this.year = year;
+                this.race = race;
+            }
+        } 
+        let myDog = new Dog('Tobias', '4 anos', 'Golden Retriever');
+        document.getElementById('demo').innerHTML= 'O nome do meu Cachorro é: ' + myDog.nome+ ' e ele tem: ' + myDog.year + ' e a raça dele é: ' + myDog.race ;
+    </script>
+</body>
+</html>
